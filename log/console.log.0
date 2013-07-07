@@ -1,0 +1,28 @@
+2013-06-24 22:48:38.867 [info] <0.6.0> Application lager started on node 'timer@Rocky-PC'
+2013-06-24 22:48:38.909 [info] <0.65.0> Starting Boss in development mode....
+
+2013-06-24 22:48:38.948 [info] <0.65.0> Starting master services on 'timer@Rocky-PC'
+
+2013-06-24 22:48:38.971 [info] <0.6.0> Application tinymq started on node 'timer@Rocky-PC'
+2013-06-24 22:48:39.033 [info] <0.65.0> SSL:[]
+
+2013-06-24 22:48:39.063 [info] <0.6.0> Application boss started on node 'timer@Rocky-PC'
+2013-06-24 22:48:39.078 [info] <0.149.0> Loading routes from "c:/erlang/timer/priv/timer.routes" ....
+2013-06-24 22:49:24.905 [info] <0.6.0> Application lager started on node 'timer@Rocky-PC'
+2013-06-24 22:49:24.930 [info] <0.65.0> Starting Boss in development mode....
+
+2013-06-24 22:49:24.967 [info] <0.65.0> Starting master services on 'timer@Rocky-PC'
+
+2013-06-24 22:49:24.989 [info] <0.6.0> Application tinymq started on node 'timer@Rocky-PC'
+2013-06-24 22:49:25.025 [info] <0.65.0> SSL:[]
+
+2013-06-24 22:49:25.028 [info] <0.65.0> Starting cowboy... on 'timer@Rocky-PC'
+
+2013-06-24 22:49:25.037 [info] <0.6.0> Application ranch started on node 'timer@Rocky-PC'
+2013-06-24 22:49:25.040 [info] <0.6.0> Application cowboy started on node 'timer@Rocky-PC'
+2013-06-24 22:49:25.041 [info] <0.65.0> Starting http listener... on 8001 
+
+2013-06-24 22:49:25.080 [info] <0.6.0> Application boss started on node 'timer@Rocky-PC'
+2013-06-24 22:49:25.097 [info] <0.347.0> Loading routes from "c:/erlang/timer/priv/timer.routes" ....
+2013-06-24 22:49:34.702 [info] <0.347.0> Loading routes from "c:/erlang/timer/priv/timer.routes" ....
+2013-06-24 22:49:34.703 [error] <0.357.0> GET / [timer] 404 1ms

@@ -1,0 +1,21 @@
+{% extends "pages/index.html" %}
+{% block title %}Edit wiki page{% endblock %}</title>
+{% block body %}
+<h1>Editing</h1>
+
+<form method="post" action="{% url action="edit" %}">
+	<input type="hidden" name="page_id" value="{% if page %}{{ page.id }}{% endif %}" />
+	<p>Title:</p><input type="text" name="page_title" value="{% if page %}{{ page.page_title }}{% endif %}" />
+	<p>Text:</p><textarea name="page_text">{% if page %}{{ page.page_text }}{% endif %}</textarea>
+	<div>
+		<input type="submit" value="Save"/>
+	</div>
+</form>
+{% if errors %}
+	<ul>
+	  {% for error in errors %}
+	  <li>{{ error }}</li>
+	  {% endfor %}
+	</ul>
+{% endif %}
+{% endblock %}
