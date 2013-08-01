@@ -1,9 +1,11 @@
 {% extends "pages/index.html" %}
 {% block title %}{{ page.page_title }}{% endblock %}
 {% block body %}
-	<h1>{{ page.page_title }}</h1>
-	<div>{{ cleaned }}</div>
-	<ul>
-		<li><a href="{% url action="edit" %}/{{ page.id }}">Edit</a></li>
-	</ul>
+	<div class="post">
+		<h1>{{ page.page_title }}</h1>
+		<div>{{ cleaned }}</div>
+		<ul>
+			<li><a href="{% url action="edit" %}/{{ page.id }}">Edit</a></li>
+		</ul>
+	</div>
 {% endblock %}
