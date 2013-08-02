@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Page {% if page.page_title %} - {{ page.page_title }} {% endif %}</title>
+		<title>Category {% if category.name %} - {{ category.name }} {% endif %}</title>
 		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css" />
     	<link rel="stylesheet" href="/static/css/style.css" />
 	</head>
@@ -14,7 +14,6 @@
                         <h1 class="brand-title">Menu</h1>
                     </hgroup>
                 -->
-
                     <nav class="nav">
                         <ul class="nav-list">
                             <li class="nav-item first">
@@ -32,36 +31,30 @@
             </div>
             <div class="content pure-u-1">
                 <!-- A wrapper for all the blog posts -->
-                <div class="posts pure-g">
-                    <h1 class="content-subhead pure-u-1">All Pages</h1>
+                      <div class="posts pure-g">
+                    <h1 class="content-subhead pure-u-1">All Categories</h1>
                     {% block body %}
                         <section class="post pure-u-1">
-            				<ul>
-            				{% if pages %}
-            				  {% for page in pages %}
-            				  <header class="post-header">
-            				    <h2 class="post-title pure-u-1"><a href="/pages/view/{{page.id}}">{{ page.page_title }}</a></h2>
+                            <ul>
+                            {% if categories %}
+                              {% for category in categories %}
+                              <header class="post-header">
+                                <h2 class="post-title pure-u-1"><a href="/categories/view/{{page.id}}">{{ category.name }}</a></h2>
 
                                 <p class="post-meta pure-u-1">
                                     By <a class="post-author" href="#">MoreOutput</a> under <a class="post-category" href="#">Uncategorized</a>
                                 </p>
-            				  </header>
-            				  {% endfor %}
-            				{% else %}
-            				  <header class="post-header">
-            				    <h2 class="post-title pure-u-1">No Pages</h2>
-            				  </header>
-            				{% endif %}
-            			</section>
-        			{% endblock %}
+                              </header>
+                              {% endfor %}
+                            {% else %}
+                              <header class="post-header">
+                                <h2 class="post-title pure-u-1">No Categories</h2>
+                              </header>
+                            {% endif %}
+                        </section>
+                    {% endblock %}
                 </div>
-                <footer class="footer">
-                    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                        </ul>
-                    </div>
-                </footer>
+               
             </div>
         </div>
 	   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
